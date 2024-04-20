@@ -12,6 +12,19 @@
     font-style: italic; /* Optional: Italicize the copyright text */
 }
 
+#header .title {
+    display: none; /* Hide the original copyright text */
+}
+
+#header .title::before {
+    content: " "; /* Add your desired copyright symbol */
+}
+
+#header .title::after {
+    content: "fun games"; /* Replace "Your New Copyright Text" with your desired copyright text */
+    font-style: italic; /* Optional: Italicize the copyright text */
+}
+
 
 :root {
   --bs-blue: #0d6efd;
