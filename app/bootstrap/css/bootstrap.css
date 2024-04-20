@@ -1,7 +1,6 @@
 @charset "UTF-8";
 #footer .Copyright {
-    color: #999; /* Change the color if needed */
-    font-size: 14px; /* Change the font size if needed */
+    display: none; /* Hide the original copyright text */
 }
 
 #footer .Copyright::before {
@@ -12,6 +11,7 @@
     content: " Your New Copyright Text"; /* Replace "Your New Copyright Text" with your desired copyright text */
     font-style: italic; /* Optional: Italicize the copyright text */
 }
+
 
 :root {
   --bs-blue: #0d6efd;
