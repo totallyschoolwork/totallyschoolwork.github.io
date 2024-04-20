@@ -1,0 +1,4 @@
+/* Hide the footer menu */
+#footer {
+    display: none;
+}
