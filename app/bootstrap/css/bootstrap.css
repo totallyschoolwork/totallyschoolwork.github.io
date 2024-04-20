@@ -11,14 +11,6 @@
     content: " Your New Copyright Text"; /* Replace "Your New Copyright Text" with your desired copyright text */
     font-style: italic; /* Optional: Italicize the copyright text */
 /* Hide the original title */
-head > title {
-    display: none;
-}
-
-/* Set the new title */
-head::before {
-    content: "Totally school work | ";
-}
 
 :root {
   --bs-blue: #0d6efd;
