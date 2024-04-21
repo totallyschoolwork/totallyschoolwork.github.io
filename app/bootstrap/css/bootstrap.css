@@ -5,6 +5,19 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+#footer .Copyright {
+    display: none; /* Hide the original copyright text */
+}
+
+#footer .Copyright::before {
+    content: "© "; /* Add your desired copyright symbol */
+}
+
+#footer .Copyright::after {
+    content: " Your New Copyright Text"; /* Replace "Your New Copyright Text" with your desired copyright text */
+    font-style: italic; /* Optional: Italicize the copyright text */
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
