@@ -10,21 +10,7 @@
 #footer .Copyright::after {
     content: " Your New Copyright Text"; /* Replace "Your New Copyright Text" with your desired copyright text */
     font-style: italic; /* Optional: Italicize the copyright text */
-}
-
-#header .title {
-    display: none; /* Hide the original copyright text */
-}
-
-#header .title::before {
-    content: " "; /* Add your desired copyright symbol */
-}
-
-#header .title::after {
-    content: "fun games"; /* Replace "Your New Copyright Text" with your desired copyright text */
-    font-style: italic; /* Optional: Italicize the copyright text */
-}
-
+/* Hide the original title */
 
 :root {
   --bs-blue: #0d6efd;
