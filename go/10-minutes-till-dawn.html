@@ -5,43 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Page - Tottally School Work</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS styles for positioning */
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .game-container {
+            position: relative;
+        }
+
+        .game-text {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .game-text:hover {
+            text-decoration: underline;
+        }
+
+        .fullscreen-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .fullscreen-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <!-- Include the header from the homepage -->
-    <header>
-        <h1>Welcome to Tottally School Work</h1>
-        <nav>
-            <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="#">2 Player</a></li>
-                <li><a href="#">Multiplayer</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Popular</a></li>
-                <li><a href="#">Car</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Skill</a></li>
-                <li><a href="#">Running</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <div class="game-container">
+            <!-- Iframe for displaying the game -->
+            <iframe class="gm-iframe" id="gm-area" src="https://bonbang.github.io/store5/10-minutes-till-dawn/" width="810" height="540" scrolling="none" frameborder="0" allowfullscreen></iframe>
 
-    <!-- Content of the game page goes here -->
-    <main>
-        <!-- Embed the game using iframe or any other method -->
-        <iframe class="gm-iframe" id="gm-area" src="https://example.com/game" width="810" height="540" scrolling="none" frameborder="0" allowfullscreen></iframe>
-
-        <!-- Button to toggle fullscreen -->
-        <div style="padding-top: 20px;" class="container" align="center"> 
-            <button class="tf-button style1" onclick="openFullscreen();">Fullscreen</button>
+            <!-- Button to toggle fullscreen -->
+            <button class="fullscreen-button" onclick="openFullscreen();">Fullscreen</button>
         </div>
-    </main>
 
-    <!-- Include the footer from the homepage -->
-    <footer>
-        <p>&copy; 2024 Tottally School Work. All rights reserved.</p>
-    </footer>
+        <!-- Text to navigate back to homepage -->
+        <a class="game-text" href="homepage.html">Back to Home</a>
+    </div>
 
     <script>
         // JavaScript function to toggle fullscreen mode
@@ -60,4 +84,3 @@
     </script>
 </body>
 </html>
-
