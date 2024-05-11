@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Totally School Work</title>
+    <title>Game Page - Tottally School Work</title>
     <style>
         /* Basic styling for centering and fullscreen button */
         body {
@@ -46,9 +46,11 @@
 
         .back-to-home {
             position: fixed;
-            bottom: 20px;
+            top: 20px;
+            left: 20px;
             text-decoration: none;
             color: #fff;
+            font-size: 24px;
             font-family: 'Comic Sans MS', cursive, sans-serif;
         }
 
@@ -58,7 +60,9 @@
     </style>
 </head>
 <body>
-    <h1>ten minutes till dawn</h1>
+    <a class="back-to-home" href="homepage.html">Back to Home</a>
+
+    <h1>10 Minutes Till Dawn</h1>
 
     <div class="game-container">
         <!-- Iframe for displaying the game -->
@@ -67,8 +71,6 @@
         <!-- Button to toggle fullscreen -->
         <button class="fullscreen-button" onclick="openFullscreen();">Fullscreen</button>
     </div>
-
-    <a class="back-to-home" href="https://totallyschoolwork.github.io/">Back to Home</a>
 
     <script>
         // JavaScript function to toggle fullscreen mode
