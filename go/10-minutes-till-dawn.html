@@ -12,24 +12,32 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             background-color: #000;
             color: #fff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
         }
 
         .game-container {
             position: relative;
+            text-align: center;
         }
 
         .fullscreen-button {
-            position: absolute;
-            bottom: 20px;
+            margin-top: 20px;
             padding: 10px 20px;
             background-color: #007bff;
             color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
 
         .fullscreen-button:hover {
@@ -37,11 +45,11 @@
         }
 
         .back-to-home {
-            position: absolute;
-            top: 20px;
-            right: 20px;
+            position: fixed;
+            bottom: 20px;
             text-decoration: none;
             color: #fff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
         }
 
         .back-to-home:hover {
@@ -50,16 +58,17 @@
     </style>
 </head>
 <body>
+    <h1>Welcome to the Awesome Game!</h1>
+
     <div class="game-container">
         <!-- Iframe for displaying the game -->
         <iframe class="gm-iframe" id="gm-area" src="https://bonbang.github.io/store5/10-minutes-till-dawn/" width="810" height="540" scrolling="none" frameborder="0" allowfullscreen></iframe>
 
         <!-- Button to toggle fullscreen -->
         <button class="fullscreen-button" onclick="openFullscreen();">Fullscreen</button>
-
-        <!-- Back to home button -->
-        <a class="back-to-home" href="homepage.html">Back to Home</a>
     </div>
+
+    <a class="back-to-home" href="https://totallyschoolwork.github.io/">Back to Home</a>
 
     <script>
         // JavaScript function to toggle fullscreen mode
@@ -78,4 +87,3 @@
     </script>
 </body>
 </html>
-
