@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Totally School Work</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         /* Additional CSS styles for the button */
         .tf-button {
@@ -18,6 +17,35 @@
 
         .tf-button:hover {
             background-color: #0056b3;
+        }
+
+        /* CSS styles for the games grid */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        /* CSS styles for individual game */
+        .game {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .game img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .game a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .game a:hover {
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -34,12 +62,27 @@
     </header>
 
     <main>
-        
+        <div class="games-grid">
+            <!-- Game 1 -->
+            <div class="game">
+                <a href="game1_link_here">
+                    <img src="icon1_link_here" alt="Game 1">
+                </a>
+            </div>
+
+            <!-- Game 2 -->
+            <div class="game">
+                <a href="game2_link_here">
+                    <img src="icon2_link_here" alt="Game 2">
+                </a>
+            </div>
+
+            <!-- Add more games as needed -->
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Tottally School Work. All rights reserved.</p>
+        <p>&copy; 2024 Totally School Work. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
