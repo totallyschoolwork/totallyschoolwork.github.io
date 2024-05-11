@@ -1,1 +1,96 @@
-https://bonbang.github.io/store5/duck-life-2-world-champion
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totally School Work</title>
+    <style>
+        /* Basic styling for centering and fullscreen button */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .game-container {
+            position: relative;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .fullscreen-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        .fullscreen-button:hover {
+            background-color: #0056b3;
+        }
+
+        .back-to-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 24px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        .back-to-home:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <a class="back-to-home" href="https://totallyschoolwork.github.io/">Home</a>
+
+    <h1>Duck Life 2</h1>
+
+    <div class="game-container">
+        <!-- Iframe for displaying the game -->
+        <iframe class="gm-iframe" id="gm-area" src="https://bonbang.github.io/store5/duck-life-2-world-champion
+" width="810" height="540" scrolling="none" frameborder="0" allowfullscreen></iframe>
+
+        <!-- Button to toggle fullscreen -->
+        <button class="fullscreen-button" onclick="openFullscreen();">Fullscreen</button>
+    </div>
+
+    <script>
+        // JavaScript function to toggle fullscreen mode
+        function openFullscreen() {
+            var elem = document.getElementById("gm-area");
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                elem.msRequestFullscreen();
+            }
+        }
+    </script>
+</body>
+</html>
